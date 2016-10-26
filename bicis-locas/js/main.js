@@ -1,10 +1,10 @@
 function validateForm(){
-	var name = document.getElementById('name').value;
+	var name = document.getElementById('name').value;//.Value obtiene el valor que ingresa el usuario en el input.
 	var lastname = document.getElementById('lastname').value;
 	var pass = document.getElementById('input-password').value;
 	var mail = document.getElementById('input-email').value;
-	var reName = /^[A-Z][a-z]*$/;
-	var rePass = /^\d{6}$/;
+	var reName = /^[A-Z][a-z]*$/; //Expresion regular para validar el nombre y apellido.
+	var rePass = /^\d{6}$/;//REGEX para la contrase;a
 	var errores = true;
 	var mensaje = " ";
 	
